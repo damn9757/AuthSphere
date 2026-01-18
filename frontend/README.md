@@ -1,16 +1,60 @@
-# React + Vite
+# 🌌 AuthSphere Frontend Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The AuthSphere Frontend is a premium, high-performance developer dashboard built with React 19. It allows developers to manage their authentication projects, view user analytics, and configure social login providers.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🚀 Project Management**: Create and configure multiple authentication environments.
+- **🛡️ API Key Hub**: Generate and rotate Public and Private keys securely.
+- **📊 User Analytics**: Monitor user sign-ups, active sessions, and provider distribution.
+- **⚙️ Provider Configuration**: One-click enablement for Google, GitHub, and Discord.
+- **📖 Documentation**: Built-in interactive documentation for SDK integration.
+- **🎨 Premium UI**: Dark-mode primary design with Radix UI and Tailwind CSS 4.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Components**: [Radix UI](https://www.radix-ui.com/)
+- **Routing**: [React Router 7](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## Expanding the ESLint configuration
+## 🏁 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher)
+- Backend running at `http://localhost:8000`
+
+### Installation
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure Environment (Optional):
+   The frontend is pre-configured to talk to `localhost:8000`. You can adjust this in `src/config/api.js` if necessary.
+
+4. Run Development Server:
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Project Structure
+
+- `/src/components`: Reusable UI components (buttons, cards, inputs).
+- `/src/pages`: Main page views (Dashboard, ProjectDetail, Docs).
+- `/src/hooks`: Custom React hooks for auth and data fetching.
+- `/src/services`: API abstraction layer using Axios.
+- `/src/layouts`: Dashboard and Auth layouts.
+
+---
+
+Built with ❤️ by the AuthSphere Team.
